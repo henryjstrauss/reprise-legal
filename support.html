@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Reprise</title>
+<style>
+  :root {
+    --ink: #1c1b1f;
+    --soft: #56545c;
+    --paper: #fbfaf8;
+    --glass: rgba(255,255,255,.55);
+    --rim: rgba(255,255,255,.75);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 24px 96px;
+    background: var(--paper);
+    background-image:
+      radial-gradient(50rem 30rem at 12% -6%, rgba(255,214,196,.55), transparent 60%),
+      radial-gradient(46rem 30rem at 92% 4%, rgba(197,205,255,.55), transparent 60%),
+      radial-gradient(40rem 26rem at 60% 22%, rgba(190,235,222,.40), transparent 62%);
+    background-repeat: no-repeat;
+    color: var(--ink);
+    font: 17px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { padding: 88px 0 8px; }
+  h1 { font-size: 2.1rem; line-height: 1.15; letter-spacing: -.02em; margin: 0 0 .4rem; }
+  h2 { font-size: 1.12rem; letter-spacing: -.01em; margin: 2.6rem 0 .9rem; }
+  .lede { color: var(--soft); margin: 0 0 2rem; }
+  .stamp { color: var(--soft); font-size: .88rem; margin-top: 3.5rem; }
+  a { color: inherit; text-decoration-color: rgba(28,27,31,.35); text-underline-offset: 3px; }
+  details {
+    background: var(--glass);
+    border: 1px solid var(--rim);
+    border-radius: 18px;
+    padding: 14px 18px;
+    margin: 8px 0;
+  }
+  summary { cursor: pointer; font-weight: 550; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--soft); font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details p { margin: .7rem 0 .2rem; }
+  .write {
+    display: inline-block;
+    margin-top: .6rem;
+    padding: 14px 26px;
+    border-radius: 999px;
+    background: var(--glass);
+    border: 1px solid var(--rim);
+    text-decoration: none;
+    font-weight: 550;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ece9f0; --soft: #a19fa8; --paper: #131217;
+      --glass: rgba(255,255,255,.07); --rim: rgba(255,255,255,.14);
+    }
+    body { background-image:
+      radial-gradient(50rem 30rem at 12% -6%, rgba(120,86,70,.40), transparent 60%),
+      radial-gradient(46rem 30rem at 92% 4%, rgba(74,80,132,.42), transparent 60%),
+      radial-gradient(40rem 26rem at 60% 22%, rgba(60,98,88,.30), transparent 62%); }
+    a { text-decoration-color: rgba(236,233,240,.35); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Support</h1>
+    <p class="lede">Reprise is for the one line you would be sorry to lose. Most of what could go wrong is answered below.</p>
+  </header>
+
+  <h2>The everyday things</h2>
+
+  <details>
+    <summary>Where are my quotes kept?</summary>
+    <p>On your phone and nowhere else — unless you turn Settings' "Sync with iCloud" on yourself, which is off unless you switch it on. Either way there is no account and no server: the one exception moves through your own iCloud account, never through anything of ours, which is also why there is nothing to log into and nothing to lose a password for. See the <a href="privacy.html">privacy page</a>.</p>
+  </details>
+
+  <details>
+    <summary>What happens to a quote I let go?</summary>
+    <p>It leaves the field, and for a while it waits in Settings under <em>Let go</em>, where you can take it back. Letting one go is meant to cost something — it is what makes keeping one mean anything — but it is not meant to be a trapdoor.</p>
+  </details>
+
+  <details>
+    <summary>One comes back every day. How is it chosen?</summary>
+    <p>The app picks one each morning, favouring the ones you have not seen for a while over the ones it showed you last week. The same sentence appears in the app, in the widget and in the morning notification, so the phone is never showing you two different quotes at once. Quotes filed in folders can come back too — tidying is not meant to be punished.</p>
+  </details>
+
+  <details>
+    <summary>I am not getting the morning quote.</summary>
+    <p>Check that notifications are allowed for Reprise in the phone's Settings, and that <em>Every morning</em> is switched on in Reprise's own settings. The notification is scheduled on the device, so it will also arrive with the phone offline.</p>
+  </details>
+
+  <details>
+    <summary>How do I carry one on the Dynamic Island?</summary>
+    <p>Open the quote, then <em>Carry on the island</em>, and choose how long for. It shows on the Lock Screen too. One at a time, deliberately: an island with a queue in it is a notification centre.</p>
+    <p>iOS never shows an app's own Live Activity while that app is on screen, so you will see it once you leave Reprise.</p>
+  </details>
+
+  <details>
+    <summary>The camera did not read the page.</summary>
+    <p>Reading happens on the phone, so it wants what a person would want: the page flat, in decent light, and the lines roughly level. If your phone cannot scan live, pick a photo or a screenshot instead — it is read exactly the same way.</p>
+  </details>
+
+  <details>
+    <summary>Can I get a quote in from another app?</summary>
+    <p>Yes. Select the text, or take a screenshot, and share it to Reprise from the share sheet. Screenshots are read on the device, the same as pages.</p>
+  </details>
+
+  <h2>The subscription</h2>
+
+  <details>
+    <summary>What does it cost?</summary>
+    <p>€29.99 a year, with the first three days free, or €2.99 a week. Prices are set per country by the App Store, so yours may differ.</p>
+  </details>
+
+  <details>
+    <summary>How do I cancel?</summary>
+    <p>In the phone's Settings, tap your name, then <em>Subscriptions</em>, then Reprise. Cancelling during the free three days costs nothing. Apple handles all of this; Reprise cannot cancel or refund on your behalf.</p>
+  </details>
+
+  <details>
+    <summary>I paid already, on another phone.</summary>
+    <p>Open Reprise and use <em>Restore purchases</em>. It asks Apple, using the same Apple Account, and puts everything back.</p>
+  </details>
+
+  <details>
+    <summary>I want a refund.</summary>
+    <p>Refunds go through Apple, at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If something about the app is the reason behind it, that is the part worth fixing — there just is not a way to write in about it yet.</p>
+  </details>
+
+  <!-- No address here yet — see Support.address in MessageView.swift. -->
+  <h2>Anything else</h2>
+  <p>Bugs, a sentence that came out wrong in your language, or an idea for what it should do next — there is not yet a way to send any of it in. That is coming.</p>
+
+  <p class="stamp">Reprise is made by Henry Strauss. Last updated 6 August 2026.</p>
+</main>
+</body>
+</html>

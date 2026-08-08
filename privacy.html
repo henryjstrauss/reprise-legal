@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Reprise</title>
+<style>
+  :root {
+    --ink: #1c1b1f;
+    --soft: #56545c;
+    --paper: #fbfaf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 24px 96px;
+    background: var(--paper);
+    background-image:
+      radial-gradient(50rem 30rem at 12% -6%, rgba(255,214,196,.55), transparent 60%),
+      radial-gradient(46rem 30rem at 92% 4%, rgba(197,205,255,.55), transparent 60%),
+      radial-gradient(40rem 26rem at 60% 22%, rgba(190,235,222,.40), transparent 62%);
+    background-repeat: no-repeat;
+    color: var(--ink);
+    font: 17px/1.65 ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { padding: 88px 0 8px; }
+  h1 { font-size: 2.1rem; line-height: 1.15; letter-spacing: -.02em; margin: 0 0 .4rem; }
+  h2 { font-size: 1.12rem; letter-spacing: -.01em; margin: 2.6rem 0 .5rem; }
+  .lede { color: var(--soft); margin: 0 0 2rem; }
+  .stamp { color: var(--soft); font-size: .88rem; margin-top: 3.5rem; }
+  ul { padding-left: 1.1rem; }
+  li { margin: .35rem 0; }
+  a { color: inherit; text-decoration-color: rgba(28,27,31,.35); text-underline-offset: 3px; }
+  strong { font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #ece9f0; --soft: #a19fa8; --paper: #131217; }
+    body { background-image:
+      radial-gradient(50rem 30rem at 12% -6%, rgba(120,86,70,.40), transparent 60%),
+      radial-gradient(46rem 30rem at 92% 4%, rgba(74,80,132,.42), transparent 60%),
+      radial-gradient(40rem 26rem at 60% 22%, rgba(60,98,88,.30), transparent 62%); }
+    a { text-decoration-color: rgba(236,233,240,.35); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy</h1>
+    <p class="lede">Reprise keeps your sentences on your phone. There is no account, no server and nothing to leak.</p>
+  </header>
+
+  <p>This is the whole policy, and it is short because the app is built so that there is little to say. Reprise has no backend. It sends nothing anywhere. What follows is a description of that, not a set of promises about what we do with data we hold, because we hold none.</p>
+
+  <h2>What we collect</h2>
+  <p>Nothing. Reprise has no analytics, no crash reporting service, no advertising identifier and no third-party SDKs of any kind. It does not ask you to sign in, and there is no account to create.</p>
+
+  <h2>Where your quotes live</h2>
+  <p>On your phone, in the app's own container. The widget and the share extension read that same store, which is why they can show what you wrote — they are parts of the same app on the same device, not a service. A note you are carrying works differently: it travels with its own copy of the text, which is why it keeps showing even after you force quit the app, and nothing is looked up from anywhere while it is up there.</p>
+  <p>Nothing is uploaded and nothing is synced by Reprise itself, and nothing is unless you turn Settings' "Sync with iCloud" on yourself — off unless you switch it on, and even then what moves goes through your own iCloud account, the same as any photo or message already does, never through a server of ours. Your phone's own backup, if you have one — iCloud or a computer — includes your quotes the same way it includes everything else on your phone, which is what brings them back on a new device. Without a backup, deleting the app deletes them for good.</p>
+
+  <h2>Camera and photos</h2>
+  <p>Reading a quote off a page happens on the device, with Apple's own Vision framework, whether you point the camera at it or pick a photo from your library — nothing is uploaded and nothing is sent anywhere for processing. The camera itself never takes or keeps a picture; it only reads what is in front of it. A photo picked from your library is only read, and Reprise can delete it from your library afterwards if you ask it to.</p>
+
+  <h2>Notifications</h2>
+  <p>All notifications are scheduled locally on your phone. There is no push server, which also means Reprise cannot send you anything it did not decide on your device in advance.</p>
+
+  <h2>Purchases</h2>
+  <p>Subscriptions are handled entirely by Apple. We never see your payment details, your name or your address. Apple gives us the same aggregate sales reports it gives every developer — how many subscriptions were bought in a country on a day — which cannot be tied back to a person.</p>
+
+  <h2>Sharing a quote</h2>
+  <p>When you share a quote as a card, Reprise makes a picture on your phone and hands it to whichever app you choose. From that moment it is in that app's hands and under that app's privacy policy. Posting to Instagram goes by way of the phone's own clipboard for a few minutes while the two apps hand it off — the same thing switching between any two apps briefly does — and iOS asks first if any app besides the two involved tries to read it. Reprise is not involved in what happens after that and does not know where it went.</p>
+
+  <h2>Children</h2>
+  <p>Reprise collects no personal information from anybody, of any age.</p>
+
+  <h2>Changes</h2>
+  <p>If this ever stops being true — if the app one day gains syncing, an account, or anything else that leaves the device — this page will change before that version ships, and the change will be plain rather than buried.</p>
+
+  <!-- No address here yet — see Support.address in MessageView.swift. This
+       page is not hosted anywhere yet either; it exists for when both are
+       ready. Do not fill either in with a guess. -->
+  <h2>Getting in touch</h2>
+  <p>There is also a <a href="support.html">support page</a>.</p>
+
+  <p class="stamp">Reprise is made by Henry Strauss. Last updated 6 August 2026.</p>
+</main>
+</body>
+</html>
